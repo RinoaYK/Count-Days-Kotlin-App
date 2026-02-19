@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Count Days</string>
+    <string name="initial_date">Data Inicial</string>
+    <string name="date">Data</string>
+    <string name="number_of_days">Número de dias</string>
+    <string name="logo_app_count_days">Logo do app Count Days</string>
+    <string name="icon_calendar_description">Icone de Calendário que abre o calendário</string>
+</resources>

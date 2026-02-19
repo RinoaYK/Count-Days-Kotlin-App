@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingHorizontal="60dp">
+
+    <ImageView
+        android:id="@+id/ic_logo_count_days"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/logo_app_count_days"
+        android:foregroundGravity="center"
+        android:src="@drawable/ic_logo_invert" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="150dp"
+        android:text="@string/initial_date"
+        android:textColor="@color/pink_500"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:focusable="false"
+            android:hint="@string/date"
+            android:inputType="date"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/ivCalendar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/icon_calendar_description"
+            android:padding="8dp"
+            android:src="@drawable/ic_calendar"
+            app:tint="@color/pink_500" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/number_of_days"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/pink_500"
+        app:hintTextColor="@color/pink_500">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvNewDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:textColor="@color/pink_500"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDayOfWeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+</LinearLayout>
