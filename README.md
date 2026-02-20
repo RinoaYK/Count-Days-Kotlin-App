@@ -17,7 +17,7 @@ Você escolhe uma data (ou usa o dia atual) e o app mostra quantos dias já pass
 - **Linguagem principal**: Kotlin
 
 
-## 📥 Como instalar e testar
+## 📥 Como instalar
 
 1. Clone o repositório
    ```bash
